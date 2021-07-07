@@ -1,0 +1,11 @@
+{
+  "expo": {
+    "name": "DetailsPredictor",
+    "slug": "DetailsPredictor",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  },
+  "name": "DetailsPredictor"
+}
