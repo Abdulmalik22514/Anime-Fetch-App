@@ -60,7 +60,13 @@ export default function Details({ navigation, route }) {
           barColor={Colors.DeliveryColour}
         >
           <View style={styles.container}>
-            <Header title={data} onPress={() => navigation.pop()} />
+            <Header
+              title={data}
+              onPress={() => {
+                setLoading(true) && <ActivityIndicator />;
+                navigation.pop();
+              }}
+            />
             <FlatList
               data={anime}
               renderItem={_renderItem}
